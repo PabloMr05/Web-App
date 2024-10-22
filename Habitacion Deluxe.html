@@ -220,7 +220,15 @@ body {
        }
 
     /* Estilos del calendario */
-    .calendar-header {
+       .calendar {
+           width: 100%;
+           background-color: #fff;
+           margin: 20px auto;
+           font-family: Arial, sans-serif;
+           border-radius: 5px;
+           box-shadow: 0 10px 29px -7px rgba(63,63,63,0.48);
+       }
+       .calendar-header {
            display: flex;
            align-items: center;
            justify-content: space-between;
@@ -242,7 +250,6 @@ body {
            color: black;
            box-sizing: border-box;
        }
-
 
 
        /* Clases de precios por colores */
@@ -284,18 +291,16 @@ body {
 
    <section id="luxury-room">
     <div class="luxury-room-container">
-       <h2>Habitación Superior</h2>
-       <p>Elegantes habitaciones que rinden homenaje a las historias de la Realeza Disney con obras de arte únicas.</p>
+       <h2>Habitación Deluxe</h2>
+       <p>Habitaciones lujosamente decoradas que rinden homenaje a las historias de la Realeza Disney, con un toque de magia y majestuosas obras de arte</p>
     </section>
 
        <!-- Carrusel de imágenes -->
        <div class="carrusel">
-           <img src="img/sup1.jpg" class="active">
-           <img src="img/sup2.webp">
-           <img src="img/sup3.webp">
-           <img src="img/sup4.webp">
-           <img src="img/sup5.webp">
-           <img src="img/sup6.webp">
+           <img src="img/delux1.jpg" class="active">
+           <img src="img/delux2.jpg">
+           <img src="img/delux3.jpg">
+           <img src="img/delux4.webp">
            <a class="prev" onclick="moverCarrusel(-1)">&#10094;</a>
            <a class="next" onclick="moverCarrusel(1)">&#10095;</a>
        </div>
@@ -313,8 +318,6 @@ body {
     </div>
 
     <script>
-
-
 
     let indice = 0;
 
@@ -420,8 +423,6 @@ document.getElementById('nextBtn').addEventListener('click', showNextMonth);
 
 
    <script>
-
-
        let indice = 0;
 
 
@@ -519,7 +520,6 @@ document.getElementById('nextBtn').addEventListener('click', showNextMonth);
 
         renderCalendar();
         updateSelectedDates();
-        
 
    </script>
    <script src="script.js"></script>
